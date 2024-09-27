@@ -6,10 +6,16 @@ import { MyButtons } from './MyButtons';
 
 export default function App() {
     // MUIのthemeを決定
-    const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+    //const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
     const theme = createTheme({
         palette: {
-            mode: isDarkMode ? "dark": "light"
+            //mode: isDarkMode ? 'dark' : 'light',
+            mode: 'light',
+            primary: {
+               main: '#d87274',
+               light: '#ffa2a3',
+               dark: '#a34449'
+            }
         }
     });
 
